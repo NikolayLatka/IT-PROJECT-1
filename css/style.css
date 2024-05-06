@@ -164,45 +164,33 @@ letter-spacing: 0%;
 /* facts */
 
 .facts {
-    height: 606px;
     background-image: url(../img/information-background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 606px;
+}
+
+.facts-flex {
+    display: flex;
+    justify-content: center;
 }
 
 .facts-list {
     display: flex;
-    justify-content: center;
-    width: 1110;
+    align-items: center;
+    border: solid 5px var(--facts-border-color);
+    padding: 25px 50px 19px;
+    margin-top: 105px;
+    justify-content: space-between;
+    width: 1110px;
     height: 396px;
-    border: 5px solid var(--facts-border-color);
-    position: relative;
-    top: 105px;
-    gap: 145px;
 }
 
-.facts-item {
-    width: 240px;
+.facts-item:not(:last-child) {
+border-right: solid var(--main-text-color) 1px;
+padding-right: 70px;
 }
 
-.facts-item:first-child {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 50px;
-    border-right: 1px solid var(--main-text-color);
-    /* padding-right: 50.5px; */
-}
-
-.facts-item:nth-child(2) {
-    margin-top: 25px;
-    margin-bottom: 19px;
-    border-right: 1px solid var(--main-text-color);
-    /* padding-right: 50.5px; */
-}
-
-.facts-item:last-child {
-    margin-top: 22px;
-    margin-bottom: 25px;
-    margin-right: 50px;
-}
 
 /* reviews */
 
@@ -285,7 +273,6 @@ margin-bottom: 47px;
 }
 
 .reviews-human-img {
-position: absolute;
 width: 31px;
 margin-right: 5px;
 }
