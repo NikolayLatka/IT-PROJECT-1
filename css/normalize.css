@@ -44,4 +44,5 @@ figure {
 
 button, input {
   border: none;
+  cursor: pointer;
 }
